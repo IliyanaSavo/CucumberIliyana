@@ -10,10 +10,32 @@ public class Order {
 
     public Set<Book> book;
 
+
     public Order() {
+    	
     }
     
-    public int getNumber() {
+    public User getUser() {
+		return user;
+	}
+
+	public void setUser(User user) {
+		this.user = user;
+	}
+
+	public Set<Book> getBook() {
+		return book;
+	}
+
+	public void setBook(Set<Book> book) {
+		this.book = book;
+	}
+
+	public Order(String bookName, String author) {
+		// TODO Auto-generated constructor stub
+	}
+
+	public int getNumber() {
         // TODO implement here
         return number;
     }
